@@ -34,7 +34,7 @@ const getCard = function (dataCard) {
       li.innerHTML = `
        <article class="product">
       <img src="${dataCard.picture}" alt="${dataCard.name}" class="product__img" />
-      <h2 class="product__title">Медальон Школы Волка</h2>
+      <h2 class="product__title">${dataCard.name}</h2>
       <div class="poduct__wrapper-buy">
         <p class="product__price">${dataCard.price}</p>
         <button class="product__btn-buy">
