@@ -33,7 +33,7 @@ const getCard = function (dataCard) {
       li.classList.add("card_product");
       li.innerHTML = `
        <article class="product">
-      <img src="${dataCard.picture}" alt="${dataCard.name}" class="product__img" />
+      <img src="${dataCard.picture}" alt="" class="product__img" />
       <h2 class="product__title">${dataCard.name}</h2>
       <div class="poduct__wrapper-buy">
         <p class="product__price">${dataCard.price}</p>
@@ -47,7 +47,7 @@ const getCard = function (dataCard) {
       break;
 
     default:
-      li.innerHTML = "Нет данных";
+      li.innerHTML = "Нема існуючих";
   }
 
   return li;
