@@ -3,7 +3,7 @@ const getData = async (url) => {
   if (response.ok) {
     return response.json();
   } else {
-    throw `Ошибка ${response.status}`;
+    throw `Помилка ${response.status}`;
   }
 };
 
